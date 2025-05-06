@@ -82,9 +82,11 @@ if uploaded_file:
 
         if not keyword_df.empty:
             display_df = keyword_df[['Date', 'Time', 'Information']].copy()
+            
+            display_df['Date'] = pd.to_datetime(display_df['Date'], format='%y-%m-%d').dt.strftime('%d-%m-%y')
 
             st.markdown("### Matching Alarm Entries")
-            st.table(display_df)  # ✅ This wraps long text properly
+            st.table(display_df)  # Use st.dataframe if needed
         else:
             st.info(f"No alarms found for keyword: {keyword_choice}")
 
