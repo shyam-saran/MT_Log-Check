@@ -1,11 +1,11 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-# from streamlit_aggrid import AgGrid, GridOptionsBuilder
-import io
-# from st_aggrid import AgGrid
 
-st.set_option('deprecation.showPyplotGlobalUse', False)
+import io
+
+
+
 
 # Sidebar for navigation
 st.sidebar.title("🔍 Navigation")
