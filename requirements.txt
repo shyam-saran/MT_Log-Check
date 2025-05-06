@@ -1,0 +1,8 @@
+streamlit
+pandas
+matplotlib
+numpy
+openpyxl
+python-dateutil
+# Uncomment the line below only if you successfully installed it locally
+# streamlit-aggrid
